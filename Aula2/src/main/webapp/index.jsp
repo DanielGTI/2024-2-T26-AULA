@@ -5,6 +5,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
+        <%!
+            // JAVA
+            public int metodo_tabuada(int tab, int n){
+                return (tab * n);
+            }
+
+        %>
+        
+        
         <%
             String texto = "Hello World!";
             
@@ -24,10 +33,10 @@
             
             escolha = 2;
             
-            int tabuada = 2;
+            int tab = 2;
             out.println("Tabuada...<br>");
             for(int i=1; i<=10; i++){
-                out.println(tabuada + " x " + i + " = " + tabuada * i + "<br>");
+                out.println(tab + " x " + i + " = " + metodo_tabuada(tab, i) + "<br>");
             }
 
         %>
