@@ -11,6 +11,12 @@
                 return (tab * n);
             }
 
+            public double efetuar_media(double a, double b, double c){
+                double media;
+                media = (a + b + c) / 3;
+                return media;
+            }
+
         %>
         
         
@@ -29,16 +35,32 @@
             out.println("Opção 1: Média<br>");
             out.println("Opção 2: Tabuada<br>");
             out.println("Opção 3: Soma<br>");
-            out.println("Escolha uma opção: 2<br><br>");
+            out.println("Escolha uma opção: ");
             
             escolha = 2;
+            out.println(escolha + "<br><br>");
             
-            int tab = 2;
-            out.println("Tabuada...<br>");
-            for(int i=1; i<=10; i++){
-                out.println(tab + " x " + i + " = " + metodo_tabuada(tab, i) + "<br>");
+            switch(escolha){
+                case 1:{
+                    media = efetuar_media(av1, av2, av3);
+                    out.println("<br>Media = " + media);
+                    break;
+                }
+                case 2: {
+                    int tab = 2;
+                    out.println("Tabuada...<br>");
+                    for(int i=1; i<=10; i++){
+                        out.println(tab + " x " + i + " = " + metodo_tabuada(tab, i) + "<br>");
+                    }
+                    break;
+                }
+                case 3:{
+                    out.println("Soma = " + (av1 + av2 + av3));
+                    break;
+                }
+                default:
+                    out.println("<br>Valor incorreto!");
             }
-
         %>
         
         
