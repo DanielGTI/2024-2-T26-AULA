@@ -21,7 +21,7 @@
                 altura = Float.parseFloat(altura_texto);
 
             if(peso == 0 || altura ==0){
-                out.println("Peso ou Altura com valores inválidos!");
+                out.println("Peso ou Altura com valores invalidos!");
             } else{    
                 
                 imc = peso / (altura * altura);
@@ -31,17 +31,17 @@
                 out.println("<br>IMC = " + (imc) + " <br>" );
                 
                 if( imc < 18.5  ){
-                    out.println("<br>Classificação: Abaixo do peso ideal.");
+                    out.println("<br>Classificacao: Abaixo do peso ideal.");
                 } else if( imc >= 18.5 && imc <= 24.9 ){
-                    out.println("<br>Classificação: Peso Ideal");
+                    out.println("<br>Classificacao: Peso Ideal");
                 } else if( imc >= 25.0 && imc <= 29.9 ){
-                    out.println("<br>Classificação: Excesso de Peso");
+                    out.println("<br>Classificacao: Excesso de Peso");
                 } else if( imc >= 30.0 && imc <= 34.9 ){
-                    out.println("<br>Classificação: Obesidade Classe I");
+                    out.println("<br>Classificacao: Obesidade Classe I");
                 } else if( imc >= 35.0 && imc <= 39.9 ){
-                    out.println("<br>Classificação: Obesidade Classe II");
+                    out.println("<br>Classificacao: Obesidade Classe II");
                 } else {
-                    out.println("<br>Classificação: Obesidade Classe III");
+                    out.println("<br>Classificacao: Obesidade Classe III");
                 }
                 
                 
