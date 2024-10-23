@@ -39,7 +39,6 @@
             
             escolha = 2;
             out.println(escolha + "<br><br>");
-            
             switch(escolha){
                 case 1:{
                     media = efetuar_media(av1, av2, av3);

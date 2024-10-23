@@ -16,9 +16,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center">
-                        IMC - Índice de Massa Corporal
+                        IMC - Indice de Massa Corporal
                     </h3>
-                    <h5 class="text-center">Fórmula</h5><br> 
+                    <h5 class="text-center">Formula</h5><br> 
                     <h5 class="text-center">IMC = peso / (altura * altura)</h5>
                     
                     <div class="row">
